@@ -8,7 +8,10 @@ using UnityEngine;
 public class PlayerDataView : MonoBehaviour {
 	[SerializeField] private SO_PlayerData soPlayerData;
 	[SerializeField] TMP_Text playerHealthText;
-	
+
+	void Update(){
+		UpdateUI();
+	}
 
 	public void UpdateUI(){
 		var playerHealth = soPlayerData.GetPlayerHealth();
