@@ -1,12 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using TMPro;
 using UnityEngine;
 
 public class PlayerDataView : MonoBehaviour {
 	[SerializeField] private SO_PlayerData soPlayerData;
-	void OnEnable(){
+	[SerializeField] TMP_Text playerHealthText;
+	
+
+	public void UpdateUI(){
 		var playerHealth = soPlayerData.GetPlayerHealth();
-		Debug.Log(playerHealth);
+		playerHealthText.text = playerHealth.ToString(CultureInfo.InvariantCulture);
 	}
 }

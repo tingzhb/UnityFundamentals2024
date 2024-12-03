@@ -10,4 +10,8 @@ public class SO_PlayerData : ScriptableObject{
 	public float GetPlayerHealth() {
 		return playerHealth;
 	}
+
+	public void ReducePlayerHealth(float amount){
+		playerHealth -= amount;
+	}
 }
