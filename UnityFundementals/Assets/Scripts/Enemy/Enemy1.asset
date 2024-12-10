@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e57e789bfc44524d83e8fb1445786ab, type: 3}
   m_Name: Enemy1
   m_EditorClassIdentifier: 
+  enemyHealth: 100
+  enemyColor: {r: 0.05391397, g: 0.05566353, b: 0.72955966, a: 0}
