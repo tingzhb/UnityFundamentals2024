@@ -8,7 +8,9 @@ public class EnemySpawner : MonoBehaviour {
 	[SerializeField] GameObject[] enemiesToSpawn;
 
 	void OnEnable(){
-		// Spawn Enemies Please!
+		foreach (var enemy in enemiesToSpawn){
+			Instantiate(enemy, transform.position, Quaternion.identity);
+		}
 	}
 
 }
