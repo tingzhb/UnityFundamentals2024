@@ -27,6 +27,8 @@ public class EnemySpawner : MonoBehaviour {
 		foreach (var enemy in enemiesToSpawn){
 			var enemyReference = Instantiate(enemy, spawnPoint.position, Quaternion.identity);
 			spawnedEnemies.Add(enemyReference);
+			Debug.Log("Enemy Spawned:" + enemyReference.gameObject.GetInstanceID());
+			Debug.LogWarning("Enemy Added");
 			yield return new WaitForFixedUpdate();
 		}
 		StartCoroutine(DespawnEnemies());

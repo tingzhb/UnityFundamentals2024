@@ -18,10 +18,10 @@ public class DataReader : MonoBehaviour{
 
 	void OnCollisionEnter(Collision other){
 		if (other.gameObject.CompareTag("Enemy")){
-			GameObject enemy = other.gameObject;
-			Debug.Log(enemy.GetComponent<DataModel>().isHappy);
-			enemy.transform.GetChild(0).gameObject.SetActive(true);
-			StartCoroutine(ChangeScene());
+			// GameObject enemy = other.gameObject;
+			// Debug.Log(enemy.GetComponent<DataModel>().isHappy);
+			// enemy.transform.GetChild(0).gameObject.SetActive(true);
+			// StartCoroutine(ChangeScene());
 		}
 	}
 
